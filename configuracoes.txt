@@ -1,0 +1,19 @@
+npx create-expo-app nomeDoApp --template blank
+npx expo install react-dom react-native-web
+
+Abra o app no navegador com o comando:
+npm run web 
+ou
+npm run android
+
+npm install
+
+npm install @react-navigation/bottom-tabs
+
+npx expo install @expo/vector-icons
+
+npm install @react-navigation/drawer
+
+
+git config --global user.name "Tainara Santos"
+git config --global user.email "tainaravit.santos28@gmail.com"

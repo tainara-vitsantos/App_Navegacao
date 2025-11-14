@@ -1,21 +1,21 @@
 import { NavigationContainer } from '@react-navigation/native'
 
-import { createStackNavigator } from "@react-navigation/stack";
+import { createDrawerNavigator } from '@react-navigation/drawer';
 
 import HomeScreen from "./screens/HomeScreen";
 import CalculadoraScreen from "./screens/CalculadoraScreen";
 import ImcScreen from "./screens/ImcScreen";
 
-const Stack = createStackNavigator()
+const Drawer = createDrawerNavigator()
 
 export default function App(){
   return(
     <NavigationContainer>
-      <Stack.Navigator initialRouteName='Home'>
-        <Stack.Screen name='Home' component={HomeScreen} />
-        <Stack.Screen name='Calculadora' component={CalculadoraScreen} />
-        <Stack.Screen name='Imc' component={ImcScreen} />
-      </Stack.Navigator>
+      <Drawer.Navigator initialRouteName='Home'>
+        <Drawer.Screen name='Home' component={HomeScreen} />
+        <Drawer.Screen name='Calculadora' component={CalculadoraScreen} />
+        <Drawer.Screen name='Imc' component={ImcScreen} />
+      </Drawer.Navigator>
     </NavigationContainer>
   )
 }
